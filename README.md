@@ -6,8 +6,17 @@ check the weather report? I certainly have, and thus the reason for this tool.
 This command-line tool allows you to get the current weather conditions for your
 location right in the command line.
 
-Just run `./weather KPDX` or whatever your location code is and it will return a nicely
-formatted list of the key weather conditions in your current location:
+Just run `./weather -h` and it will tell you where to look for your location code.
+
+```
+usage: weather <airport/location code> Example: weather KPDX
+
+If you do not know your location code you can look it up here: http://w1.weather.gov/xml/current_obs
+```
+
+After you have your location code, all you have to do is run `./weather <location_code>`
+(in my case `./weather KPDX`) and it will return a nicely formatted list of the
+weather conditions of the location code:
 
 ```
 Location: Portland, Portland International Airport, OR
